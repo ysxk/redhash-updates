@@ -1,2 +1,15 @@
-# redhash-updates
-RedHash Studio 版本通知与下载说明（不含软件源码）
+# RedHash Studio 更新通知
+
+下载入口：https://pan.quark.cn/s/13da2a4629c9
+
+本仓库仅发布版本号和更新说明，不包含软件源码、安装包或签名密钥。
+
+软件启动后在后台检查 latest.json；访问失败不会阻塞启动和任务。不自动下载安装。下载更新包后，在“设置 → 软件更新”导入；软件打不开时运行 RedHashUpdater.exe。
+
+## 发布者操作
+
+1. 在发布向导中填写新版本号和更新说明，生成并验证完整包或更新包。
+2. 先将生成的包和使用说明上传到上面的夸克目录。
+3. 再将 release/published/版本号/latest.json 上传覆盖本仓库 main 分支根目录的 latest.json。
+
+只修改通知文件不会升级软件，必须同时提供对应的签名更新包。
